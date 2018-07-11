@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS notifications;
+CREATE TABLE notifications (
+  id VARCHAR(32) PRIMARY KEY,
+  title TEXT NOT NULL,
+  body TEXT NOT NULL,
+  service TEXT NOT NULL,
+  created_at TIMESTAMP WITH TIME ZONE NOT NULL
+);
